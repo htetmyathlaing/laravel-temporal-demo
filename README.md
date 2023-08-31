@@ -9,7 +9,7 @@
 > In step 5, if you are asked to create rr config yaml file, 
 > please choose **NO**.
 > The `rr.yaml` file is already configured in the project.
-- ./rr serve **Waring**
+- ./rr serve 
 
 # Run Temporal Server
 1. cd temporal-server
