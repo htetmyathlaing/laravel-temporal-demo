@@ -7,7 +7,7 @@
 6. ./rr serve
 
 # References
-
+- [Lara.camp presentation](https://docs.google.com/presentation/d/1-BGLwI17k7Y5OOTpofppWiVq6ax_OIxfCK_HbGKmaGM/edit?usp=sharing)
 - [Temporal.io](https://temporal.io/)
 - [PHP Samples](https://github.com/temporalio/samples-php)
 - [Temporal 101 with Go](https://learn.temporal.io/courses/temporal_101/go)
