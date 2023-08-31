@@ -1,5 +1,5 @@
 # Installaing
-1. git clone https://github.com/htetmyathlaing/laravel-temporal-demo.git)
+1. git clone https://github.com/htetmyathlaing/laravel-temporal-demo.git
 2. cd laravel-temporal-demo
 3. composer install
 4. cp .env.example .env
