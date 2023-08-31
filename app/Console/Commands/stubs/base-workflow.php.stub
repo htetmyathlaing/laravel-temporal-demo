@@ -1,0 +1,10 @@
+<?php
+
+namespace DummyNamespace;
+
+use Temporal\Workflow\WorkflowInterface;
+
+#[WorkflowInterface]
+abstract class DummyClass
+{
+}

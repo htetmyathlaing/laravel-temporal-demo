@@ -1,0 +1,16 @@
+<?php
+
+namespace DummyNamespace;
+
+use Temporal\Activity\ActivityInterface;
+use Temporal\Activity\ActivityMethod;
+
+#[ActivityInterface]
+class DummyClass
+{
+    #[ActivityMethod]
+    public function handle()
+    {
+        // To Implement
+    }
+}

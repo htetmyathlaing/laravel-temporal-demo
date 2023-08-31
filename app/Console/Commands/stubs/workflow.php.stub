@@ -1,0 +1,20 @@
+<?php
+
+namespace DummyNamespace;
+
+use Temporal\Workflow\WorkflowInterface;
+use Temporal\Workflow\WorkflowMethod;
+use App\Workflows\BaseWorkflow;
+
+#[WorkflowInterface]
+class DummyClass extends BaseWorkflow
+{
+    public function __construct()
+    {
+    }
+
+    #[WorkflowMethod]
+    public function execute()
+    {
+    }
+}
