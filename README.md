@@ -6,7 +6,7 @@
 5. ./vendor/bin/rr get-binary 
 
 > **Warning**<br>
-> In step 5, if you are asked to create rr config yaml file, 
+> In step 5, if you are asked to  create default ".rr.yaml" configuration file, 
 > please choose **NO**.
 > The `rr.yaml` file is already configured in the project.
 
