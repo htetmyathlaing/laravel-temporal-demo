@@ -32,6 +32,7 @@ class AsyncWorkflow
 
         return [
             $first,
+            $second,
             yield $third,
             yield $third
         ];

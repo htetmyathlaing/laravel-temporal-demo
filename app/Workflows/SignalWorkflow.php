@@ -19,20 +19,20 @@ class SignalWorkflow
     {
         $result = [];
         while (true) {
-            yield Workflow::await(fn () => $this->inputs !== [] || $this->exit);
-            if ($this->inputs === [] && $this->exit) {
+            yield Workflow::await(fn () => $this->exit);
+            if ($this->exit) {
+                foreach ($this->inputs as $name){
+                    $result[] = sprintf('Hello, %s!', $name);
+                }
                 return $result;
             }
-
-            $name = array_shift($this->input);
-            $result[] = sprintf('Hello, %s!', $name);
         }
     }
 
     #[SignalMethod]
     public function addName(string $name): void
     {
-        $this->input[] = $name;
+        $this->inputs[] = $name;
     }
 
     #[SignalMethod]
