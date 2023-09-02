@@ -48,7 +48,7 @@ class WorkFlowController extends Controller
         ]);
     }
 
-    public function startRetryWorkflow()
+    public function startRetryWorkflow(): JsonResponse
     {
         $workflowOptions = WorkflowOptions::new()
             ->withTaskQueue(config('services.temporal.task-queue'))
@@ -71,7 +71,7 @@ class WorkFlowController extends Controller
         ]);
     }
 
-    public function startSignalWorkflow()
+    public function startSignalWorkflow(): JsonResponse
     {
         /** @var SignalWorkflow $workflow */
         $workflow = WorkflowBuilder::workflow(SignalWorkflow::class);
@@ -94,7 +94,7 @@ class WorkFlowController extends Controller
         ]);
     }
 
-    public function startTimeoutWorkflow()
+    public function startTimeoutWorkflow(): JsonResponse
     {
         $workflowOptions = WorkflowOptions::new()
             ->withTaskQueue(config('services.temporal.task-queue'))
